@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    padding-left: 150px;
+}
+
+.rect{
+    display: flex;
+}
+
+.shape{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 10%;
+    box-shadow: 7px 7px 2px rgba(43, 27, 44, 0.836);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+
+.start{
+    /* background-color: red; */
+    /* height: 0px; */
+    /* width: 175px; */
+    color: rgb(18, 13, 7);
+    position: relative;
+    top: 300px;
+    right: 250px;
+
+    /* display: flex; */
+    align-content: center;
+    align-items: center;
+    justify-content: baseline;
+
+}
+
+.rotate{
+    /* background-color: aqua; */
+    animation: asmit 1s ease-in  infinite alternate;
+    
+  
+}
+
+ @keyframes asmit{
+    from{
+  transform: rotate(5deg);
+    }
+    to{
+        transform: rotate(-5deg);
+
+    }
+} 
+
+.loading3{
+    background-color: rgba(67, 230, 55, 0.96);
+    color: blue;
+    height: 85px;
+    border: 1px solid rgba(28, 27, 27, 0.941);
+    box-shadow: 4px 3px 3px rgb(55, 74, 52);
+    width: 80px;
+    border-radius: 50%;
+    animation: ball ease-in 0.5s infinite alternate;
+    
+}
+
+@keyframes ball{
+    from{
+        transform: translateY(50px);
+        }
+    to{
+        transform: translateY(-50px);
+        
+    }
+}
+
+.image{
+    /* background-color: aqua; */
+    animation: lastbox ease-in 1s infinite alternate;
+    background-size: auto;
+}
+
+/* 
+@keyframes lastbox{
+    from{
+        transform: skewY(0deg);
+    }
+    to{
+        transform: skewX(150deg);
+    }
+} */
+
+
+ /* .cursor{
+    background-color: rgba(240, 10, 10, 0.941);
+    height: 20px;
+    width: 20px;
+    position: absolute;
+}  */
