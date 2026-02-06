@@ -20,7 +20,7 @@ sq1.innerHTML=`<h1>${r} </h1>`
 }, 1000)
 
 setInterval(function(){
-let words = ["Apple", "Banana", "Mango", "Orange", "Grapes","Pineapple","kiwi","Peach","Guava","Watermelon"];
+let words = ["Apple", "Banana", "Mango", "Orange", "Grapes","Pineapple","kiwi","Peach","Guava","Watermelon","papaya","berries","cherry"];
 let randomIndex = Math.floor(Math.random() * words.length);
   sq2.innerHTML = `<h1>${words[randomIndex]}</h1>`;
 },1000)
